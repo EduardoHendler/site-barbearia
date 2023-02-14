@@ -1,98 +1,111 @@
 <DOCTYPE html>
-<html lang="pt-br">
-       
-        <head>
-            <meta charset="UTF-8">
-            <title>contato</title>
-            <link rel="stylesheet" href="reset.css">
-            <link rel="stylesheet" href="style.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        </head>
+    <html lang="pt-br">
 
-            <body>
-                <header>
-                         <div class="caixa">
-                            <h1><img src="logo.png" alt="logo da barbearia"></h1>
-                                <nav>
-                                    <ul>
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="produtos.html">produtos</a></li>
-                                        <li><a href="contato.html">contato</a></li>
-                                    </ul>
-                                </nav>
-                         </div>
-                </header>
+    <head>
+        <meta charset="UTF-8">
+        <title>contato</title>
+        <meta name="viewport" content="width-device-width">
 
-                    <main>
-                        <form>
-                            <label for="nomesobrenome">nome e sobrenome</label>
-                            <input type="text" id="nomesobrenome" class="input-padrao" required>
-                            
-                            <label for="email">email</label>
-                            <input type="email" id="email"class="input-padrao" required placeholder="seuemail@dominio.com">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="assets/menu.css">
+        <link rel="stylesheet" href="assets/sobre__barbearia.css">
+        <link rel="stylesheet" href="assets/beneficios.css">
+        <link rel="stylesheet" href="assets/produtos.css">
+        <link rel="stylesheet" href="assets/formulario.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
 
-                            <label for="email">telefone</label>
-                            <input type="tel" id="telefone"class="input-padrao" required placeholder="(xx) xxxx-xxxx ">
+    <body>
+        <header>
+            <div class="caixa">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="produtos.html">produtos</a></li>
+                        <li><a href="contato.html">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-                            <label for="mensagem">mensagem</label>
-                            <textarea cols="59" rows="10" id="mensagem"class="input-padrao" required></textarea>
+        <main>
+            <form>
+                <label for="nomesobrenome">nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-                                    <fieldset>
-                                            <legend>como prefere o nosso contato?</legend>
-                                            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">email</label>
-                                            
-                                            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">telefone</label>
+                <label for="email">email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-                                            <label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>whatsapp</label>
-                                        
-                                            <input type="submit" value="enviar formulario" class="enviar">
-                                    </fieldset>
+                <label for="email">telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxx-xxxx ">
+
+                <label for="mensagem">mensagem</label>
+                <textarea cols="59" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                
+                
+                <fieldset class="contatoES">
+                    <legend>como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email"
+                            id="radio-email">email</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                            id="radio-telefone">telefone</label>
+
+                    <label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                            checked>whatsapp</label>
+
+                    <input type="submit" value="enviar formulario" class="enviar">
+                </fieldset>
+         
+
+                <fieldset class="turno">
+                    <p>qual horário prefere ser atendido?</p>
+                    <select>
+                        <option>manhã</option>
+                        <option>tarde</option>
+                        <option>noite</option>
+
+                    </select>
+                </fieldset>
 
 
-                                    <fieldset>
-                                        <p>qual horário prefere ser atendido?</p>
-                                            <select>
-                                                <option>manhã</option>
-                                                <option>tarde</option>
-                                                <option>noite</option>
-                                
-                                            </select>
-                                    </fieldset>
+                <label><input type="checkbox" class="checkbox" checked> de receber nossas novidades por email?</label>
+            </form>
+            <table class="tabela_horario">
+                <thead>
+                    <tr>
+                        <td>dia</td>
+                        <td>horario</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>segunda</td>
+                        <td>8h - 20h</td>
+                    </tr>
 
+                    <tr>
+                        <td>quarta</td>
+                        <td>8h - 20h</td>
+                    </tr>
 
-                             <label><input type="checkbox" class="checkbox" checked> de receber nossas novidades por email?</label>
-                          </form>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <td>dia</td>
-                                                <td>horario</td>
-                                            </tr>
-                                        </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>segunda</td>
-                                                        <td>8h - 20h</td>
-                                                    </tr>
+                    <tr>
+                        <td>sexta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
 
-                                                    <tr>
-                                                        <td>quarta</td>
-                                                        <td>8h - 20h</td>
-                                                    </tr>
+        <footer>
+            <img src="img/logo-branco.png" alt="logo da barbearia alura">
+            <p class="copyright">&copy copyright barbearia alura</p>
+        </footer>
+    </body>
 
-                                                    <tr>
-                                                        <td>sexta</td>
-                                                        <td>8h - 20h</td>
-                                                    </tr>
-                                                </tbody>
-                                     </table>
-                    </main>
-
-                <footer>
-                    <img src="logo-branco.png" alt="logo da barbearia alura">
-                    <p class="copyright">&copy copyright barbearia alura</p>
-                </footer>
-            </body>
-        </html>
+    </html>
